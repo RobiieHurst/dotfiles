@@ -11,7 +11,7 @@ local yank_group = augroup("HighlightYank", {})
 
 -- Reload module function for development
 function R(name)
-	require("plenary.reload").reload_module(name)
+  require("plenary.reload").reload_module(name)
 end
 
 -- Custom filetype support
@@ -33,21 +33,21 @@ vim.filetype.add({
 
 -- Highlight yanked text
 autocmd("TextYankPost", {
-	group = yank_group,
-	pattern = "*",
-	callback = function()
-		vim.highlight.on_yank({
-			higroup = "IncSearch",
-			timeout = 40,
-		})
-	end,
+  group = yank_group,
+  pattern = "*",
+  callback = function()
+    vim.highlight.on_yank({
+      higroup = "IncSearch",
+      timeout = 40,
+    })
+  end,
 })
 
 -- Remove trailing whitespace on save
 autocmd({ "BufWritePre" }, {
-	group = robGroup,
-	pattern = "*",
-	command = [[%s/\s\+$//e]],
+  group = robGroup,
+  pattern = "*",
+  command = [[%s/\s\+$//e]],
 })
 
 -- LSP on_attach keybinds
@@ -66,7 +66,7 @@ autocmd("LspAttach", {
       end)
       return
     end
-    
+
     local opts = { buffer = e.buf }
     vim.keymap.set("n", "gd", function()
       vim.lsp.buf.definition()
@@ -123,6 +123,3 @@ autocmd("FileType", {
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
-
-
-

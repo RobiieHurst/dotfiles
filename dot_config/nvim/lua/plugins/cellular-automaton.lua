@@ -1,5 +1,4 @@
 return {
-	"Eandrju/cellular-automaton.nvim",
-	cmd = "CellularAutomaton",
+  "Eandrju/cellular-automaton.nvim",
+  cmd = "CellularAutomaton",
 }
-

@@ -1,1 +1,4 @@
-# Robo's nvim config based on the @ThePrimeagen's init.lua
+# 💤 LazyVim
+
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.

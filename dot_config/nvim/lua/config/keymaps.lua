@@ -63,10 +63,10 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Search and replace
 vim.keymap.set(
-	"n",
-	"<leader>s",
-	[[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
-	{ desc = "Search and replace word under cursor" }
+  "n",
+  "<leader>s",
+  [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+  { desc = "Search and replace word under cursor" }
 )
 
 -- Make file executable
@@ -76,16 +76,16 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>", { desc = "Go error return" })
 vim.keymap.set("n", "<leader>ea", 'oassert.NoError(err, "")<Esc>F";a', { desc = "Go assert no error" })
 vim.keymap.set(
-	"n",
-	"<leader>ef",
-	'oif err != nil {<CR>}<Esc>Olog.Fatalf("error: %s\\n", err.Error())<Esc>jj',
-	{ desc = "Go error fatal" }
+  "n",
+  "<leader>ef",
+  'oif err != nil {<CR>}<Esc>Olog.Fatalf("error: %s\\n", err.Error())<Esc>jj',
+  { desc = "Go error fatal" }
 )
 vim.keymap.set(
-	"n",
-	"<leader>el",
-	'oif err != nil {<CR>}<Esc>O.logger.Error("error", "error", err)<Esc>F.;i',
-	{ desc = "Go error log" }
+  "n",
+  "<leader>el",
+  'oif err != nil {<CR>}<Esc>O.logger.Error("error", "error", err)<Esc>F.;i',
+  { desc = "Go error log" }
 )
 
 -- Refactoring shortcuts
@@ -103,19 +103,19 @@ vim.keymap.set("n", "<space>-", "<CMD>Oil --float<CR>", { desc = "Open parent di
 
 -- Cellular automaton fun
 vim.keymap.set("n", "<leader>ca", function()
-	require("cellular-automaton").start_animation("make_it_rain")
+  require("cellular-automaton").start_animation("make_it_rain")
 end, { desc = "Cellular automaton" })
 
 -- Source config
 vim.keymap.set("n", "<leader><leader>", function()
-	vim.cmd("so")
+  vim.cmd("so")
 end, { desc = "Source config" })
 
 -- Find .env files specifically
 vim.keymap.set("n", "<leader>pE", function()
-	require("telescope.builtin").find_files({
-		prompt_title = "Find .env files",
-		find_command = { "find", ".", "-name", ".env*", "-type", "f" },
-		hidden = true,
-	})
+  require("telescope.builtin").find_files({
+    prompt_title = "Find .env files",
+    find_command = { "find", ".", "-name", ".env*", "-type", "f" },
+    hidden = true,
+  })
 end, { desc = "Find .env files" })

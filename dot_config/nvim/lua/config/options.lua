@@ -57,10 +57,6 @@ vim.opt.fileencodings = { "utf-8" }
 vim.opt.spelllang = "en_us"
 vim.opt.spell = true
 
--- Treesitter stability settings
-vim.g.treesitter_highlighter_enable = true
-vim.g.treesitter_incremental_selection_enable = true
-
--- Add redraw settings for better stability
-vim.opt.redrawtime = 10000
-vim.opt.maxmempattern = 20000
+-- -- Treesitter stability settings
+-- vim.g.treesitter_highlighter_enable = true
+-- vim.g.treesitter_incremental_selection_enable = true

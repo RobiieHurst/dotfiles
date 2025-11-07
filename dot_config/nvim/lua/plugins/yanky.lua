@@ -39,3 +39,4 @@ return {
     end, { desc = "Yank History" })
   end,
 }
+

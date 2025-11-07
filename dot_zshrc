@@ -109,8 +109,19 @@ export PATH="$PATH:$HOME/.config/scripts"
 
 bindkey -s ^f "tmux-sessionizer\n"
 
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
+
+# Start ssh-agent and auto-add keys
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)"
+    ssh-add ~/.ssh/id_rsa_geolytix
+    # Add other keys if you have multiple
+    # ssh-add ~/.ssh/id_rsa
+fi
 
 . "$HOME/.local/share/../bin/env"
+
+# Added by CodeRabbit CLI installer
+export PATH="/home/robbie/.local/bin:$PATH"
