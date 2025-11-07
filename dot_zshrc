@@ -117,6 +117,7 @@ export NVM_DIR="$HOME/.nvm"
 if [ -z "$SSH_AUTH_SOCK" ]; then
     eval "$(ssh-agent -s)"
     ssh-add ~/.ssh/id_rsa_geolytix
+    ssh-add ~/.ssh/id_rsa_rob
     # Add other keys if you have multiple
     # ssh-add ~/.ssh/id_rsa
 fi
