@@ -126,3 +126,6 @@ fi
 
 # Added by CodeRabbit CLI installer
 export PATH="/home/robbie/.local/bin:$PATH"
+
+# OpenClaw Completion
+source <(openclaw completion --shell zsh)

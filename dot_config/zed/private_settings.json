@@ -1,5 +1,6 @@
 {
-	"language_models": {},
+	"relative_line_numbers": "enabled",
+ "language_models": {},
 	"agent": {
 		"default_model": {
 			"provider": "zed.dev",

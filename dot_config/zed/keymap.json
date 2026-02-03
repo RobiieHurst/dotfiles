@@ -78,8 +78,8 @@
 
 			// + Buffers
 			// Switch between buffers
-			"shift-j": "pane::ActivatePreviousItem",
-			"shift-k": "pane::ActivateNextItem",
+			"shift-h": "pane::ActivatePreviousItem",
+			"shift-l": "pane::ActivateNextItem",
 			// Close active panel
 			"shift-q": "pane::CloseActiveItem",
 			"ctrl-q": "pane::CloseActiveItem",
