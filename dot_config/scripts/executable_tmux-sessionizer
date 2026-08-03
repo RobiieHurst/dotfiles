@@ -1,16 +1,67 @@
 #!/usr/bin/env bash
 
+resolve_workspace_repo() {
+  local path=$1
+
+  case "$path" in
+    "$HOME"/Documents/geolytix.nosync/worktrees/*/*)
+      if [[ -e $path/.git ]]; then
+        printf '%s\n' "$path"
+        return
+      fi
+      ;;
+  esac
+
+  printf '%s\n' "$path"
+}
+
+session_name_for_path() {
+  local path=$1
+
+  case "$path" in
+    "$HOME"/Documents/geolytix.nosync/worktrees/*/*)
+      printf '%s\n' "${path##*/}"
+      return
+      ;;
+    "$HOME"/Documents/geolytix.nosync/worktrees/*/*/*)
+      path=${path%/*}
+      printf '%s\n' "${path##*/}"
+      return
+      ;;
+  esac
+
+  printf '%s\n' "${path##*/}"
+}
+
 if [[ $# -eq 1 ]]; then
-  selected=$1
+  selected_input=$1
 else
-  selected=$(find ~/Documents/geolytix.nosync/ ~/Documents/rob/ ~/.config -mindepth 1 -maxdepth 1 -type d | fzf)
+  selected_input=$( {
+    for root in \
+      "$HOME/Documents/geolytix.nosync" \
+      "$HOME/Documents/rob" \
+      "$HOME/.config"
+    do
+      [[ -d $root ]] || continue
+      find "$root" -mindepth 1 -maxdepth 1 -type d
+    done
+
+    if [[ -d "$HOME/Documents/geolytix.nosync/worktrees/xyz" ]]; then
+      find "$HOME/Documents/geolytix.nosync/worktrees/xyz" -mindepth 1 -maxdepth 1 -type d
+    fi
+
+    if [[ -d "$HOME/Documents/geolytix.nosync/worktrees/xyz_rob" ]]; then
+      find "$HOME/Documents/geolytix.nosync/worktrees/xyz_rob" -mindepth 1 -maxdepth 1 -type d
+    fi
+  } | fzf )
 fi
 
-if [[ -z $selected ]]; then
+if [[ -z $selected_input ]]; then
   exit 0
 fi
 
-selected_name=$(basename "$selected" | tr . _)
+selected=$(resolve_workspace_repo "$selected_input")
+selected_name=$(session_name_for_path "$selected_input" | tr . _)
 tmux_running=$(pgrep tmux)
 
 # If tmux isn’t running at all, start a new session and attach

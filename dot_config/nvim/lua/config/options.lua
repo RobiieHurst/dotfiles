@@ -45,7 +45,7 @@ vim.opt.clipboard = "unnamedplus"
 -- Enable the option to require a Prettier config file
 vim.g.lazyvim_prettier_needs_config = false
 
--- Concealment level for markdown/obsidian
+-- Concealment level for markdown
 vim.opt.conceallevel = 2
 
 -- Encoding settings

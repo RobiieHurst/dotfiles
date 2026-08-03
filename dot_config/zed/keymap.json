@@ -4,13 +4,24 @@
 		"context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
 		"bindings": {
 			// put key-bindings here if you want them to work in normal & visual mode
+			// Neovim parity
+			"n": ["workspace::SendKeystrokes", "n z z"],
+			"N": ["workspace::SendKeystrokes", "N z z"],
+			"space p v": "project_panel::ToggleFocus",
+			"space p f": "file_finder::Toggle",
+			"space p s": "pane::DeploySearch",
+			"space z z": "workspace::ToggleCenteredLayout",
+			"space z Z": "workspace::ToggleCenteredLayout",
+
 			// Git
 			//
 			"ctrl-u": ["workspace::SendKeystrokes", "ctrl-u z z"],
 			"ctrl-d": ["workspace::SendKeystrokes", "ctrl-d z z"],
 
 			"space g h d": "editor::ToggleSelectedDiffHunks",
-			"space g s": "git_panel::ToggleFocus",
+			"space g g": "git_panel::Toggle",
+			"space g w": "git::Worktree",
+			"space g b": "branches::OpenRecent",
 
 			// Toggle inlay hints
 			"space t i": "editor::ToggleInlayHints",
@@ -30,8 +41,14 @@
 			// Search word under cursor
 			"space s w": "pane::DeploySearch",
 
+			// Diagnostics
+			"space x x": "diagnostics::Deploy",
+			"space x w": "diagnostics::ToggleWarnings",
+
 			// Chat with AI
-			"space a c": "agent::ToggleFocus",
+			"space a c": "agent::Toggle",
+			"space a t": "multi_workspace::ToggleWorkspaceSidebar",
+			"space a T": "agents_sidebar::ToggleThreadHistory",
 			// Go to file with `gf`
 			"g f": "editor::OpenExcerpts"
 		}
@@ -40,6 +57,20 @@
 		"context": "Editor && vim_mode == normal && !VimWaiting && !menu",
 		"bindings": {
 			// put key-bindings here if you want them to work only in normal mode
+			// Neovim parity
+			"J": "editor::JoinLines",
+			"Q": null,
+			"ctrl-p": "file_finder::Toggle",
+			"-": "pane::RevealInProjectPanel",
+			"space -": "project_panel::ToggleFocus",
+			"space c w": "project_panel::ToggleFocus",
+			"space |": "pane::SplitRight",
+			"space w d": "pane::CloseActiveItem",
+			"space x X": "diagnostics::DeployCurrentFile",
+			"space c s": "outline::Toggle",
+			"space k": "editor::GoToDiagnostic",
+			"space j": "editor::GoToPreviousDiagnostic",
+
 			// Window movement bindings
 			// Ctrl jklk to move between panes
 			"ctrl-h": "workspace::ActivatePaneLeft",
@@ -68,6 +99,14 @@
 			"s S": "project_symbols::Toggle",
 			// Diagnostic
 			"space x x": "diagnostics::Deploy",
+			"space x w": "diagnostics::ToggleWarnings",
+			"space x s": ["task::Spawn", { "task_name": "SonarQube: analyze current file" }],
+
+			// +Debug / Breakpoints
+			"space d b": "editor::ToggleBreakpoint",
+			"space d e": "debugger::ToggleEnableBreakpoint",
+			"space d c": "debugger::ClearAllBreakpoints",
+			"space d p": "debug_panel::Toggle",
 
 			// +Git
 			// Git prev/next hunk
@@ -84,8 +123,11 @@
 			"shift-q": "pane::CloseActiveItem",
 			"ctrl-q": "pane::CloseActiveItem",
 			"space b d": "pane::CloseActiveItem",
+			"space b p": "pane::TogglePinTab",
 			// Close other items
 			"space b o": "pane::CloseInactiveItems",
+			"space b a": "pane::CloseAllItems",
+			"space b u": "pane::CloseCleanItems",
 			// Save file
 			"ctrl-s": "workspace::Save",
 			// File finder
@@ -112,13 +154,19 @@
 		"context": "Editor && vim_mode == visual && !VimWaiting && !menu",
 		"bindings": {
 			// visual, visual line & visual block modes
-			"g c": "editor::ToggleComments"
+			"g c": "editor::ToggleComments",
+			"J": "editor::MoveLineDown",
+			"K": "editor::MoveLineUp",
+			"space y": "editor::Copy",
+			"space d": "editor::Cut",
+			"space p": "editor::Paste"
 		}
 	},
 	// Better escape
 	{
 		"context": "Editor && vim_mode == insert && !menu",
 		"bindings": {
+			"ctrl-c": "vim::NormalBefore",
 			"j j": "vim::NormalBefore", // remap jj in insert mode to escape
 			"j k": "vim::NormalBefore" // remap jk in insert mode to escape
 		}
@@ -141,14 +189,25 @@
 	},
 	// Toggle terminal
 	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-\\": "terminal_panel::Toggle"
+		}
+	},
+	{
 		"context": "Workspace",
 		"bindings": {
-			"ctrl-\\": "terminal_panel::ToggleFocus"
+			"ctrl-\\": "terminal_panel::Toggle"
 		}
 	},
 	{
 		"context": "Terminal",
 		"bindings": {
+			"ctrl-\\": "terminal_panel::Toggle",
+			"ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-+": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-0": "workspace::ResetActiveDockSize",
 			"ctrl-h": "workspace::ActivatePaneLeft",
 			"ctrl-l": "workspace::ActivatePaneRight",
 			"ctrl-k": "workspace::ActivatePaneUp",
@@ -168,6 +227,10 @@
 			"p": "project_panel::Paste",
 
 			"shift-e": "project_panel::CollapseSelectedEntry",
+			"ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-+": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-0": "workspace::ResetActiveDockSize",
 			// Close project panel as project file panel on the right
 			"q": "workspace::ToggleLeftDock",
 			"space e": "workspace::ToggleLeftDock",
@@ -182,6 +245,10 @@
 	{
 		"context": "Dock",
 		"bindings": {
+			"ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-+": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-0": "workspace::ResetActiveDockSize",
 			"ctrl-h": "workspace::ActivatePaneLeft",
 			"ctrl-l": "workspace::ActivatePaneRight",
 			"ctrl-k": "workspace::ActivatePaneUp",
@@ -195,7 +262,32 @@
 			"ctrl-l": "workspace::ActivatePaneRight",
 			"ctrl-k": "workspace::ActivatePaneUp",
 			"ctrl-j": "workspace::ActivatePaneDown",
+			"ctrl-alt--": ["workspace::DecreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-=": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-+": ["workspace::IncreaseActiveDockSize", { "px": 0 }],
+			"ctrl-alt-0": "workspace::ResetActiveDockSize",
 			"ctrl-shift-b": "workspace::ToggleRightDock"
+		}
+	},
+	{
+		"context": "AgentPanel",
+		"use_key_equivalents": true,
+		"bindings": {
+			"q": "workspace::CloseActiveDock"
+		}
+	},
+	{
+		"context": "ThreadsSidebar",
+		"use_key_equivalents": true,
+		"bindings": {
+			"q": "multi_workspace::CloseWorkspaceSidebar"
+		}
+	},
+	{
+		"context": "ThreadsSidebar && not_searching",
+		"use_key_equivalents": true,
+		"bindings": {
+			"q": "multi_workspace::CloseWorkspaceSidebar"
 		}
 	},
 	// Run nearest task

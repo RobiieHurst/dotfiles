@@ -70,6 +70,14 @@ return {
     },
 
     -- Keep other useful features but be conservative
+    image = {
+      enabled = true,
+      -- default list + svg, which snacks supports but doesn't enable by default
+      formats = {
+        "png", "jpg", "jpeg", "gif", "bmp", "webp", "tiff", "heic", "avif",
+        "mp4", "mov", "avi", "mkv", "webm", "pdf", "icns", "svg",
+      },
+    },
     notifier = { enabled = true },
     quickfile = { enabled = true },
     statuscolumn = { enabled = false }, -- Disable to avoid conflicts

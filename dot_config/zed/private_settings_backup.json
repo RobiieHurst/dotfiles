@@ -1,0 +1,38 @@
+{
+	"agent_servers": {
+  "opencode": {
+   "type": "registry"
+  },
+  "codex-acp": {
+   "type": "registry"
+  }
+ },
+ "relative_line_numbers": "enabled",
+ "language_models": {},
+	"agent": {
+		"default_model": {
+			"provider": "zed.dev",
+			"model": "claude-sonnet-4"
+		},
+		"default_profile": "write",
+		"model_parameters": [],
+		"always_allow_tool_actions": true
+	},
+	"code_actions_on_format": {
+		"source.fixAll.biome": true,
+		"source.organizeImports.biome": true
+	},
+	"ui_font_size": 16,
+	"buffer_font_size": 14,
+	"vim_mode": true,
+	"theme": {
+		"mode": "light",
+		"light": "Rosé Pine Dawn",
+		"dark": "Catppuccin Frappé - No Italics"
+	},
+	"formatter": {
+		"language_server": {
+			"name": "biome"
+		}
+	}
+}

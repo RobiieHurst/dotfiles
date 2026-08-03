@@ -9,6 +9,64 @@ local autocmd = vim.api.nvim_create_autocmd
 local robGroup = augroup("robGroup", {})
 local yank_group = augroup("HighlightYank", {})
 
+local large_file_size = math.floor(1.5 * 1024 * 1024)
+local large_line_length = 1000
+
+local function file_size(buf)
+  local filename = vim.api.nvim_buf_get_name(buf)
+  if filename == "" then
+    return 0
+  end
+
+  local size = vim.fn.getfsize(filename)
+  return size > 0 and size or 0
+end
+
+local function is_large_file(buf)
+  local size = file_size(buf)
+  if size > large_file_size then
+    return true
+  end
+
+  local line_count = vim.api.nvim_buf_line_count(buf)
+  return line_count > 0 and (size - line_count) / line_count > large_line_length
+end
+
+local function set_large_file_options(buf)
+  if not vim.api.nvim_buf_is_valid(buf) then
+    return
+  end
+
+  if not is_large_file(buf) then
+    if vim.b[buf].large_file then
+      vim.b[buf].large_file = nil
+      vim.b[buf].autoformat = nil
+      vim.b[buf].completion = nil
+      vim.diagnostic.enable(true, { bufnr = buf })
+    end
+    return
+  end
+
+  vim.b[buf].large_file = true
+  vim.b[buf].autoformat = false
+  vim.b[buf].completion = false
+  vim.bo[buf].syntax = ""
+  vim.bo[buf].synmaxcol = 200
+
+  pcall(vim.treesitter.stop, buf)
+  vim.diagnostic.enable(false, { bufnr = buf })
+
+  for _, client in ipairs(vim.lsp.get_clients({ bufnr = buf })) do
+    vim.lsp.buf_detach_client(buf, client.id)
+  end
+
+  for _, win in ipairs(vim.fn.win_findbuf(buf)) do
+    vim.wo[win].foldmethod = "manual"
+    vim.wo[win].conceallevel = 0
+    vim.wo[win].spell = false
+  end
+end
+
 -- Reload module function for development
 function R(name)
   require("plenary.reload").reload_module(name)
@@ -31,6 +89,14 @@ vim.filetype.add({
   },
 })
 
+autocmd({ "BufReadPost", "BufWinEnter", "FileType" }, {
+  group = robGroup,
+  pattern = "*",
+  callback = function(e)
+    set_large_file_options(e.buf)
+  end,
+})
+
 -- Highlight yanked text
 autocmd("TextYankPost", {
   group = yank_group,
@@ -43,17 +109,36 @@ autocmd("TextYankPost", {
   end,
 })
 
+-- Go uses tabs for indentation; hide their listchars markers.
+autocmd("FileType", {
+  group = robGroup,
+  pattern = "go",
+  callback = function()
+    vim.opt_local.list = false
+  end,
+})
+
 -- Remove trailing whitespace on save
 autocmd({ "BufWritePre" }, {
   group = robGroup,
   pattern = "*",
-  command = [[%s/\s\+$//e]],
+  callback = function(e)
+    if vim.b[e.buf].large_file then
+      return
+    end
+    vim.cmd([[keepjumps keeppatterns %s/\s\+$//e]])
+  end,
 })
 
 -- LSP on_attach keybinds
 autocmd("LspAttach", {
   group = robGroup,
   callback = function(e)
+    if vim.b[e.buf].large_file or is_large_file(e.buf) then
+      set_large_file_options(e.buf)
+      return
+    end
+
     -- Check if this is a .env file and disable LSP if so
     local filename = vim.api.nvim_buf_get_name(e.buf)
     if filename:match("%.env") or filename:match("%.env%.") then
