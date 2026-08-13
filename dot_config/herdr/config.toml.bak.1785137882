@@ -1,0 +1,55 @@
+onboarding = false
+[keys]
+# Match ~/.config/tmux/tmux.conf.
+prefix = "ctrl+space"
+
+# Sidebar navigation: prefix+w for Spaces, prefix+a for the agent-aware navigator.
+goto = ["prefix+g", "prefix+a"]
+navigate_workspace_up = "k"
+navigate_workspace_down = "j"
+navigate_pane_up = ""
+navigate_pane_down = ""
+
+# Tmux windows map to Herdr tabs.
+new_tab = "prefix+c"
+previous_tab = "prefix+p"
+next_tab = "prefix+n"
+switch_tab = "prefix+1..9"
+
+# Tmux pane controls.
+split_vertical = "prefix+%"
+split_horizontal = "prefix+\""
+focus_pane_left = "prefix+h"
+focus_pane_down = "prefix+j"
+focus_pane_up = "prefix+k"
+focus_pane_right = "prefix+l"
+cycle_pane_next = "prefix+o"
+close_pane = "prefix+x"
+zoom = "prefix+z"
+copy_mode = "prefix+["
+
+# Tmux uses prefix+d to detach.
+detach = "prefix+d"
+
+[[keys.command]]
+key = "prefix+f"
+type = "popup"
+command = "/home/rob-geo/.config/scripts/herdr-sessionizer"
+description = "open project"
+width = "80%"
+height = "80%"
+
+[[keys.command]]
+key = "prefix+alt+o"
+type = "shell"
+command = '''tab_json="$("$HERDR_BIN_PATH" tab create --workspace "$HERDR_ACTIVE_WORKSPACE_ID" --cwd "$HERDR_ACTIVE_PANE_CWD" --label opencode --focus)" &&
+pane_id="$(printf '%s' "$tab_json" | jq -er '.result.root_pane.pane_id')" &&
+"$HERDR_BIN_PATH" pane run "$pane_id" opencode'''
+description = "open OpenCode tab"
+
+[theme]
+name = "rose-pine"
+auto_switch = false
+
+[ui.toast]
+delivery = "herdr"

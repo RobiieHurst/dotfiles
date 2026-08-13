@@ -1,0 +1,506 @@
+{
+  "version": 3,
+  "workspaces": [
+    {
+      "id": "w14",
+      "custom_name": "rudy",
+      "identity_cwd": "/home/rob-geo/Documents/rob/rudy",
+      "public_pane_numbers": {
+        "3": 14,
+        "4": 15,
+        "2": 11,
+        "1": 2
+      },
+      "next_public_pane_number": 16,
+      "public_tab_numbers": [
+        2,
+        11,
+        14,
+        15
+      ],
+      "next_public_tab_number": 16,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 1
+          },
+          "panes": {
+            "1": {
+              "cwd": "/home/rob-geo/Documents/rob/rudy",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "05a92e99-950a-4f62-999f-871d78e72a1b"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 1,
+          "root_pane": 1
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 2
+          },
+          "panes": {
+            "2": {
+              "cwd": "/home/rob-geo/Documents/rob/rudy",
+              "agent_session": {
+                "source": "herdr:opencode",
+                "agent": "opencode",
+                "kind": "id",
+                "value": "ses_02537edc2ffesUUE7ZPgf8JkW7"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 2,
+          "root_pane": 2
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 3
+          },
+          "panes": {
+            "3": {
+              "cwd": "/home/rob-geo/Documents/rob/rudy"
+            }
+          },
+          "zoomed": false,
+          "focused": 3,
+          "root_pane": 3
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 4
+          },
+          "panes": {
+            "4": {
+              "cwd": "/home/rob-geo/Documents/rob/rudy"
+            }
+          },
+          "zoomed": false,
+          "focused": 4,
+          "root_pane": 4
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w1N",
+      "custom_name": "xyz",
+      "identity_cwd": "/home/rob-geo/Documents/geolytix.nosync/xyz",
+      "public_pane_numbers": {
+        "6": 6,
+        "7": 9,
+        "8": 10,
+        "5": 2
+      },
+      "next_public_pane_number": 11,
+      "public_tab_numbers": [
+        2,
+        6,
+        9,
+        10
+      ],
+      "next_public_tab_number": 11,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 5
+          },
+          "panes": {
+            "5": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/xyz"
+            }
+          },
+          "zoomed": false,
+          "focused": 5,
+          "root_pane": 5
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 6
+          },
+          "panes": {
+            "6": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/xyz",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "f7be638c-5046-4f1c-a0e3-7c1e92dbcaf4"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 6,
+          "root_pane": 6
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 7
+          },
+          "panes": {
+            "7": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/xyz"
+            }
+          },
+          "zoomed": false,
+          "focused": 7,
+          "root_pane": 7
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 8
+          },
+          "panes": {
+            "8": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/xyz"
+            }
+          },
+          "zoomed": false,
+          "focused": 8,
+          "root_pane": 8
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w1P",
+      "custom_name": "mapp-next",
+      "identity_cwd": "/home/rob-geo/Documents/geolytix.nosync/mapp-next",
+      "public_pane_numbers": {
+        "9": 18,
+        "10": 19,
+        "12": 22,
+        "11": 21
+      },
+      "next_public_pane_number": 23,
+      "public_tab_numbers": [
+        18,
+        19,
+        21,
+        22
+      ],
+      "next_public_tab_number": 23,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 9
+          },
+          "panes": {
+            "9": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/mapp-next"
+            }
+          },
+          "zoomed": false,
+          "focused": 9,
+          "root_pane": 9
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 10
+          },
+          "panes": {
+            "10": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/mapp-next",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "37696379-3d1b-4abc-8384-17ef46fea017"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 10,
+          "root_pane": 10
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 11
+          },
+          "panes": {
+            "11": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/mapp-next"
+            }
+          },
+          "zoomed": false,
+          "focused": 11,
+          "root_pane": 11
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 12
+          },
+          "panes": {
+            "12": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/mapp-next",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "5f898df7-4765-40df-aeba-401272586c5d"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 12,
+          "root_pane": 12
+        }
+      ],
+      "active_tab": 2
+    },
+    {
+      "id": "w22",
+      "custom_name": "open-design",
+      "identity_cwd": "/home/rob-geo/Documents/geolytix.nosync/open-design",
+      "public_pane_numbers": {
+        "13": 1
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 13
+          },
+          "panes": {
+            "13": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/open-design"
+            }
+          },
+          "zoomed": false,
+          "focused": 13,
+          "root_pane": 13
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w23",
+      "custom_name": "data-agentic-scraping",
+      "identity_cwd": "/home/rob-geo/Documents/geolytix.nosync/data-agentic-scraping",
+      "public_pane_numbers": {
+        "15": 2,
+        "14": 1,
+        "16": 3
+      },
+      "next_public_pane_number": 4,
+      "public_tab_numbers": [
+        1,
+        2,
+        3
+      ],
+      "next_public_tab_number": 4,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 14
+          },
+          "panes": {
+            "14": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/data-agentic-scraping",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "a6f63e01-eece-47be-a146-d8759a2dd7d1"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 14,
+          "root_pane": 14
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 15
+          },
+          "panes": {
+            "15": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/data-agentic-scraping"
+            }
+          },
+          "zoomed": false,
+          "focused": 15,
+          "root_pane": 15
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 16
+          },
+          "panes": {
+            "16": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/data-agentic-scraping"
+            }
+          },
+          "zoomed": false,
+          "focused": 16,
+          "root_pane": 16
+        }
+      ],
+      "active_tab": 2
+    },
+    {
+      "id": "w24",
+      "custom_name": "data-ai-ws2",
+      "identity_cwd": "/home/rob-geo/Documents/geolytix.nosync/data-ai-ws2",
+      "public_pane_numbers": {
+        "18": 2,
+        "17": 1
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 17
+          },
+          "panes": {
+            "17": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/data-ai-ws2"
+            }
+          },
+          "zoomed": false,
+          "focused": 17,
+          "root_pane": 17
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 18
+          },
+          "panes": {
+            "18": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/data-ai-ws2",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "a3e13afa-9304-40a5-aa75-8a7a01b702fc"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 18,
+          "root_pane": 18
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w25",
+      "custom_name": "mapp-demo",
+      "identity_cwd": "/home/rob-geo/Documents/geolytix.nosync/mapp-demo",
+      "public_pane_numbers": {
+        "19": 1
+      },
+      "next_public_pane_number": 2,
+      "public_tab_numbers": [
+        1
+      ],
+      "next_public_tab_number": 2,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 19
+          },
+          "panes": {
+            "19": {
+              "cwd": "/home/rob-geo/Documents/geolytix.nosync/mapp-demo"
+            }
+          },
+          "zoomed": false,
+          "focused": 19,
+          "root_pane": 19
+        }
+      ],
+      "active_tab": 0
+    },
+    {
+      "id": "w26",
+      "custom_name": "herdr",
+      "identity_cwd": "/home/rob-geo/.config/herdr",
+      "public_pane_numbers": {
+        "21": 2,
+        "20": 1
+      },
+      "next_public_pane_number": 3,
+      "public_tab_numbers": [
+        1,
+        2
+      ],
+      "next_public_tab_number": 3,
+      "tabs": [
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 20
+          },
+          "panes": {
+            "20": {
+              "cwd": "/home/rob-geo/.config/herdr"
+            }
+          },
+          "zoomed": false,
+          "focused": 20,
+          "root_pane": 20
+        },
+        {
+          "custom_name": null,
+          "layout": {
+            "Pane": 21
+          },
+          "panes": {
+            "21": {
+              "cwd": "/home/rob-geo/.config/herdr",
+              "agent_session": {
+                "source": "herdr:claude",
+                "agent": "claude",
+                "kind": "id",
+                "value": "003b75bc-cad4-48ae-a12f-819245899f3a"
+              }
+            }
+          },
+          "zoomed": false,
+          "focused": 21,
+          "root_pane": 21
+        }
+      ],
+      "active_tab": 1
+    }
+  ],
+  "active": 2,
+  "selected": 2,
+  "sidebar_width": 26,
+  "sidebar_section_split": 0.5,
+  "collapsed_space_keys": []
+}

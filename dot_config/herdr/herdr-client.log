@@ -1,0 +1,327 @@
+2026-07-22T08:55:41.670376Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=183874
+2026-07-22T08:55:41.670429Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T08:55:41.911883Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T08:57:18.052145Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=186472
+2026-07-22T08:57:18.052187Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T08:57:18.192959Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T10:14:21.617518Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=4949
+2026-07-22T10:14:21.617580Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T10:14:21.832358Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T11:10:41.247623Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=32017
+2026-07-22T11:10:41.247658Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T11:10:41.348208Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T11:42:29.789516Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=32017
+2026-07-22T11:42:33.675500Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=45714
+2026-07-22T11:42:33.675517Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T11:42:33.839428Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T19:22:35.071173Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3162
+2026-07-22T19:22:35.071212Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T19:22:35.294696Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T19:51:25.054767Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=11787
+2026-07-22T19:51:25.054793Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T19:51:25.055694Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T20:01:24.101177Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=15178
+2026-07-22T20:01:24.101211Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-22T20:01:24.174519Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-22T20:04:55.761363Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:04:55.761455Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:06:20.540282Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:06:20.540384Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:20:56.827836Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:20:56.827887Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:21:24.426765Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:21:24.426821Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:21:25.351305Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-22T20:21:25.351361Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T05:06:31.318683Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=87574
+2026-07-23T05:06:31.318711Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T05:06:31.403718Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T05:44:48.162531Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=100839
+2026-07-23T05:44:48.162559Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T05:44:48.229341Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T06:28:01.291565Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=118777
+2026-07-23T06:28:01.291595Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T06:28:01.298635Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T08:14:08.188561Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=163768
+2026-07-23T08:14:08.188592Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T08:14:08.389985Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T16:21:13.467059Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=378615
+2026-07-23T16:21:13.467079Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T16:21:13.554197Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T16:25:10.381206Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=381701
+2026-07-23T16:25:10.381234Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T16:25:10.630934Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T17:37:24.877367Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=411223
+2026-07-23T17:37:24.877394Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T17:37:24.974778Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T17:40:01.900819Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T17:40:01.900887Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T17:40:02.686686Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T17:40:02.686752Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T17:40:03.236796Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T17:40:03.236873Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T18:46:03.319072Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=441133
+2026-07-23T18:46:03.319098Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T18:46:03.353835Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T19:13:46.378671Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=461693
+2026-07-23T19:13:46.378686Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T19:13:46.379845Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T19:46:20.353306Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=532724
+2026-07-23T19:46:20.353322Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T19:46:20.365279Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-23T20:19:17.628098Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T20:19:17.628176Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-23T20:27:27.754303Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=593857
+2026-07-23T20:27:27.754323Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-23T20:27:27.888092Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-24T12:22:22.843596Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3162
+2026-07-24T12:22:28.154109Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1131213
+2026-07-24T12:22:28.154123Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-24T12:22:28.193615Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-24T12:40:15.185775Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1148513
+2026-07-24T12:40:15.185966Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-24T12:40:15.222296Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-24T14:35:21.625500Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-24T14:35:21.625574Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-25T06:29:32.618341Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-25T06:29:32.618414Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-25T09:32:13.531659Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1856319
+2026-07-25T09:32:13.531690Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-25T09:32:13.650312Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-25T11:09:27.767970Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2033966
+2026-07-25T11:09:27.768006Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-25T11:09:27.800863Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-25T12:00:43.666384Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2082186
+2026-07-25T12:00:43.666419Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-25T12:00:43.679048Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-25T16:14:29.936352Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-25T16:14:29.936405Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-25T16:14:30.100042Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-25T16:14:30.100084Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-25T19:26:33.460288Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=2728248
+2026-07-25T19:26:33.460323Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-25T19:26:33.534696Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-26T07:56:47.703207Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3252448
+2026-07-26T07:56:47.703239Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-26T07:56:47.722167Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-27T09:04:28.690310Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3281
+2026-07-27T09:04:28.691365Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-27T09:04:28.694669Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-27T09:44:32.641424Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=49319
+2026-07-27T09:44:32.641453Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-27T09:44:32.666007Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-27T11:11:27.738065Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=147592
+2026-07-27T11:11:27.738613Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-27T11:11:27.750131Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-27T11:11:43.795907Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=148448
+2026-07-27T11:11:43.795917Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-27T11:11:43.806515Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-27T11:11:54.396982Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=148885
+2026-07-27T11:11:54.396992Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-27T11:11:54.407476Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-28T08:09:19.870797Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=992230
+2026-07-28T08:09:19.871321Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-28T08:09:20.058737Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-28T14:23:53.403075Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=5602
+2026-07-28T14:23:53.403686Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-28T14:23:53.640824Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-28T17:59:06.465098Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=205073
+2026-07-28T17:59:06.465118Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-28T17:59:06.572095Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-28T18:06:42.927261Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=227957
+2026-07-28T18:06:42.927280Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-28T18:06:42.998239Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-28T18:09:44.507051Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=237478
+2026-07-28T18:09:44.507070Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-28T18:09:44.578339Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-28T18:09:53.401099Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=238441
+2026-07-28T18:09:53.401120Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-28T18:09:53.418763Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-30T10:40:28.494273Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=11889
+2026-07-30T10:40:28.494815Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-30T10:40:28.730620Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-30T10:47:20.110994Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=32564
+2026-07-30T10:47:20.111016Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-30T10:47:20.140214Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-30T10:47:39.814880Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=36340
+2026-07-30T10:47:39.814893Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-30T10:47:39.815782Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-30T15:31:02.944865Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=268192
+2026-07-30T15:31:02.945486Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-30T15:31:02.958082Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T09:09:49.822271Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=113990
+2026-07-31T09:09:49.824080Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-31T09:09:50.074648Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T10:39:06.590965Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=188279
+2026-07-31T10:39:06.591534Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-31T10:39:06.680906Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T11:50:51.346751Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=256567
+2026-07-31T11:50:51.347317Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-31T11:50:51.391337Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T13:46:35.552561Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=379178
+2026-07-31T13:46:35.553114Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-31T13:46:35.567174Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T14:09:03.157303Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=407799
+2026-07-31T14:09:03.157335Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-07-31T14:09:03.175019Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-07-31T14:09:46.418297Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-07-31T14:09:46.418337Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-01T14:22:20.673923Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1267301
+2026-08-01T14:22:20.674265Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-01T14:22:20.674812Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-01T14:34:53.211424Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3338
+2026-08-01T14:34:53.212310Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-01T14:34:53.441218Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-01T14:34:58.924921Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=10818
+2026-08-01T14:34:58.924941Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-01T14:34:59.022176Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-01T15:19:38.812808Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=55744
+2026-08-01T15:19:38.812826Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-01T15:19:38.819448Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-01T15:34:59.168637Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3326
+2026-08-01T15:34:59.169293Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-01T15:34:59.394875Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-01T16:15:41.008894Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=30374
+2026-08-01T16:15:41.008908Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-01T16:15:41.009622Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-01T17:55:48.406456Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=78624
+2026-08-01T17:55:48.406478Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-01T17:55:48.438906Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-03T11:43:28.305273Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=254033
+2026-08-03T11:43:28.305784Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-03T11:43:28.538823Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-03T12:08:01.412404Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3814
+2026-08-03T12:08:01.413140Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-03T12:08:01.656469Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-03T12:26:59.623858Z  INFO herdr::logging: herdr exiting event="app.shutdown" subsystem="client" outcome="completed" pid=3814
+2026-08-03T12:27:03.122981Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=31390
+2026-08-03T12:27:03.123001Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-03T12:27:03.239917Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-03T14:18:46.050005Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=4147
+2026-08-03T14:18:46.050498Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-03T14:18:46.282026Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-04T05:25:39.898328Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=256587
+2026-08-04T05:25:39.898344Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-04T05:25:40.078623Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-04T10:49:18.384529Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=417155
+2026-08-04T10:49:18.385087Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-04T10:49:18.503110Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-05T08:43:18.151097Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3749
+2026-08-05T08:43:18.151656Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-05T08:43:18.277597Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-05T18:49:40.802978Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=319468
+2026-08-05T18:49:40.803497Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-05T18:49:40.803810Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-05T19:52:03.812376Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-05T19:52:03.962589Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-05T19:52:03.962636Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-06T11:27:05.765433Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1347779
+2026-08-06T11:27:05.766016Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-06T11:27:05.778926Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-06T12:15:13.580196Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=1409987
+2026-08-06T12:15:13.580350Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-06T12:15:13.592711Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T05:43:17.208784Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=15759
+2026-08-07T05:43:17.209320Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T05:43:17.455254Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T05:46:29.610968Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3472
+2026-08-07T05:46:29.611481Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T05:46:29.731496Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T05:47:04.058607Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=9374
+2026-08-07T05:47:04.058634Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T05:47:04.294303Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T05:47:42.323791Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=10585
+2026-08-07T05:47:42.323809Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T05:47:42.486121Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T13:27:34.436996Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=26889
+2026-08-07T13:27:34.437541Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T13:27:34.661130Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T13:34:16.389365Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3261
+2026-08-07T13:34:16.390001Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T13:34:16.614182Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T13:39:13.523496Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=9563
+2026-08-07T13:39:13.523512Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T13:39:13.523894Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-07T13:53:54.265584Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=20914
+2026-08-07T13:53:54.265606Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-07T13:53:54.268570Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-08T09:03:18.429722Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T09:03:18.429801Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T09:03:18.586870Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T09:03:18.586923Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T10:43:41.466215Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=796223
+2026-08-08T10:43:41.466225Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-08T10:43:41.467818Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-08T14:19:03.942947Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=5472
+2026-08-08T14:19:03.943556Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-08T14:19:04.172644Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-08T14:23:48.181766Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=17166
+2026-08-08T14:23:48.181784Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-08T14:23:48.194201Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-08T14:57:05.254900Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=77175
+2026-08-08T14:57:05.254915Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-08T14:57:05.255683Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-08T19:27:32.890401Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:27:33.040471Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:27:33.040516Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:34:24.013296Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:34:24.163441Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:34:24.163473Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:57:20.758032Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:57:20.758145Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:57:20.935411Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:57:20.935510Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:59:16.046736Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T19:59:16.046851Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T20:22:12.637329Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T20:22:12.787390Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T20:22:12.787508Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-08T20:44:45.381749Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=574730
+2026-08-08T20:44:45.381768Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-08T20:44:45.409751Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-09T05:26:26.924558Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=806575
+2026-08-09T05:26:26.924575Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-09T05:26:27.133522Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-09T06:45:52.185475Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=856417
+2026-08-09T06:45:52.185495Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-09T06:45:52.266941Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-10T08:56:29.740276Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=9904
+2026-08-10T08:56:29.741054Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-10T08:56:29.989978Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-10T10:10:17.280467Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=98795
+2026-08-10T10:10:17.280489Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-10T10:10:17.359869Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-10T12:47:10.500262Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3253
+2026-08-10T12:47:10.501213Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-10T12:47:10.743634Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-10T19:00:24.688579Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=218470
+2026-08-10T19:00:24.688589Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-10T19:00:24.701070Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-10T19:08:35.576225Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-10T19:08:35.576293Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-10T19:08:35.787217Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-10T19:08:35.787300Z  WARN herdr::raw_input: flushing lone escape after input timeout; if this follows an alt chord or focus switch it may reach the pane as plain esc bytes=[27]
+2026-08-11T08:22:18.524658Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=4528
+2026-08-11T08:22:18.524766Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-11T08:22:18.765385Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-11T08:47:36.648136Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=46000
+2026-08-11T08:47:36.648151Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-11T08:47:36.677455Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-11T14:18:07.887711Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3869
+2026-08-11T14:18:07.888169Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-11T14:18:08.094527Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-11T14:47:08.021828Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=29247
+2026-08-11T14:47:08.021841Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-11T14:47:08.225351Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-11T17:25:06.691811Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=114198
+2026-08-11T17:25:06.691827Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-11T17:25:06.696321Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-11T18:12:22.719971Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=133458
+2026-08-11T18:12:22.719997Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-11T18:12:22.802336Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-12T08:11:19.206604Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=180302
+2026-08-12T08:11:19.206794Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-12T08:11:19.458201Z  INFO herdr::client: handshake succeeded version=17 encoding=SemanticFrame
+2026-08-13T07:10:43.514385Z  INFO herdr::logging: herdr starting event="app.startup" subsystem="client" outcome="started" pid=3643
+2026-08-13T07:10:43.514643Z  INFO herdr::client: connecting to server path=/home/rob-geo/.config/herdr/herdr-client.sock
+2026-08-13T07:10:43.762100Z  INFO herdr::client: handshake succeeded version=19 encoding=SemanticFrame
