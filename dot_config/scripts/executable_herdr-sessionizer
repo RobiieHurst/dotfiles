@@ -33,6 +33,24 @@ workspace_name_for_path() {
   printf '%s\n' "${path##*/}"
 }
 
+fzf_theme_scheme() {
+  local colors_file="${XDG_STATE_HOME:-$HOME/.local/state}/omarchy/current/theme/colors.toml"
+  local mode
+
+  if [[ -r $colors_file ]]; then
+    mode=$(awk -F= '/^[[:space:]]*mode[[:space:]]*=/ {
+      gsub(/[[:space:]"]/, "", $2)
+      print $2
+      exit
+    }' "$colors_file")
+  fi
+
+  case "$mode" in
+    light) printf '%s\n' light ;;
+    *) printf '%s\n' dark ;;
+  esac
+}
+
 if [[ $# -eq 1 ]]; then
   selected_input=$1
 else
@@ -53,7 +71,7 @@ else
     if [[ -d "$HOME/Documents/geolytix.nosync/worktrees/xyz_rob" ]]; then
       find "$HOME/Documents/geolytix.nosync/worktrees/xyz_rob" -mindepth 1 -maxdepth 1 -type d
     fi
-  } | fzf )
+  } | fzf --color="$(fzf_theme_scheme)" )
 fi
 
 if [[ -z $selected_input ]]; then
@@ -62,7 +80,16 @@ fi
 
 selected=$(resolve_workspace_repo "$selected_input")
 selected_name=$(workspace_name_for_path "$selected_input" | tr . _)
-herdr_bin=${HERDR_BIN_PATH:-herdr}
+
+# HERDR_BIN_PATH can retain the kernel's " (deleted)" suffix when Herdr is
+# upgraded while its server is still running. Fall back to the current binary.
+herdr_bin=${HERDR_BIN_PATH:-}
+if [[ ! -x $herdr_bin ]]; then
+  herdr_bin=$(command -v herdr) || {
+    printf 'herdr-sessionizer: herdr is not installed or not in PATH\n' >&2
+    exit 127
+  }
+fi
 
 workspace_id=$("$herdr_bin" workspace list | jq -r --arg label "$selected_name" \
   'first(.result.workspaces[] | select(.label == $label) | .workspace_id) // empty')
