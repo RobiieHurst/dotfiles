@@ -1,0 +1,18 @@
+customCommands:
+  - key: 'n'
+    context: 'worktrees'
+    description: 'New worktree (Zed style: ../worktrees/<repo>/<name>)'
+    prompts:
+      - type: 'input'
+        title: 'Worktree name (blank = random name)'
+        key: 'Name'
+        initialValue: ''
+      - type: 'input'
+        title: 'Base branch'
+        key: 'Base'
+        initialValue: '{{.CheckedOutBranch.Name}}'
+        suggestions:
+          preset: 'refs'
+    command: '~/.config/lazygit/worktree-add.sh {{.Form.Name | quote}} {{.Form.Base | quote}}'
+    loadingText: 'Adding worktree'
+    output: 'log'
