@@ -16,3 +16,13 @@ customCommands:
     command: '~/.config/lazygit/worktree-add.sh {{.Form.Name | quote}} {{.Form.Base | quote}}'
     loadingText: 'Adding worktree'
     output: 'log'
+  - key: 'D'
+    context: 'worktrees'
+    description: 'Remove worktree and delete merged local branch'
+    prompts:
+      - type: 'confirm'
+        title: 'Tear down worktree?'
+        body: 'Remove {{.SelectedWorktree.Path}} and delete its local branch if merged?'
+    command: '~/.config/lazygit/worktree-remove.sh {{.SelectedWorktree.Path | quote}}'
+    loadingText: 'Removing worktree'
+    output: 'log'
