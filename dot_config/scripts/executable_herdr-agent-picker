@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+herdr_bin="${HERDR_BIN_PATH:-}"
+if [[ ! -x "$herdr_bin" ]]; then
+  herdr_bin="$(command -v herdr)"
+fi
+
+if ! command -v fzf >/dev/null 2>&1; then
+  printf 'herdr-agent-picker requires fzf\n' >&2
+  exit 1
+fi
+
+agents_json="$("$herdr_bin" agent list)"
+agent_count="$(jq -r '.result.agents | length' <<<"$agents_json")"
+
+if [[ "$agent_count" == "0" ]]; then
+  printf 'No live agents found.\n'
+  read -r -n 1 -s -p 'Press any key to close.' || true
+  exit 0
+fi
+
+choice="$({
+  jq -r '
+    .result.agents[]
+    | [
+        .pane_id,
+        (.agent_status // "unknown"),
+        (.agent // "agent"),
+        (.terminal_title_stripped // .terminal_title // "untitled"),
+        ((.foreground_cwd // .cwd // "") | split("/") | last),
+        (.foreground_cwd // .cwd // "")
+      ]
+    | @tsv
+  ' <<<"$agents_json"
+} | fzf \
+  --delimiter=$'\t' \
+  --with-nth=2,3,5,4 \
+  --nth=2.. \
+  --layout=reverse \
+  --border \
+  --header=$'STATE\tAGENT\tPROJECT\tTITLE' \
+  --prompt='Agent › ' \
+  --no-multi)" || exit 0
+
+pane_id="${choice%%$'\t'*}"
+"$herdr_bin" agent focus "$pane_id" >/dev/null

@@ -1,3 +1,4 @@
+require("config.remote_clipboard").setup()
 -- Options are automatically loaded before lazy.nvim startup
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
@@ -41,6 +42,11 @@ vim.opt.updatetime = 50
 
 -- System clipboard integration
 vim.opt.clipboard = "unnamedplus"
+-- No display and no provider from config.remote_clipboard (e.g. a bare tty):
+-- copy via OSC 52 escape sequences through the terminal instead of wl-copy
+if vim.g.clipboard == nil and not vim.env.WAYLAND_DISPLAY and not vim.env.DISPLAY then
+  vim.g.clipboard = "osc52"
+end
 
 -- Enable the option to require a Prettier config file
 vim.g.lazyvim_prettier_needs_config = false

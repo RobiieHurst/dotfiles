@@ -5,7 +5,7 @@ prefix = "ctrl+space"
 
 # Session navigator searches across workspaces, tabs, panes, and agents.
 settings = ""
-goto = ["prefix+g", "prefix+a", "prefix+s"]
+goto = ["prefix+g", "prefix+s"]
 navigate_workspace_up = "k"
 navigate_workspace_down = "j"
 navigate_pane_up = ""
@@ -33,10 +33,26 @@ copy_mode = "prefix+["
 detach = "prefix+d"
 
 [[keys.command]]
+key = "prefix+a"
+type = "popup"
+command = "/home/rob-geo/.config/scripts/herdr-agent-picker"
+description = "choose agent"
+width = "90%"
+height = "80%"
+
+[[keys.command]]
 key = "prefix+f"
 type = "popup"
 command = "/home/rob-geo/.config/scripts/herdr-sessionizer"
 description = "open project"
+width = "80%"
+height = "80%"
+
+[[keys.command]]
+key = "prefix+t"
+type = "popup"
+command = "/home/rob-geo/.config/scripts/herdr-sessionizer --worktrees"
+description = "open worktree"
 width = "80%"
 height = "80%"
 
@@ -49,10 +65,15 @@ pane_id="$(printf '%s' "$tab_json" | jq -er '.result.root_pane.pane_id')" &&
 description = "open OpenCode tab"
 
 [theme]
-auto_switch = true
+name = "terminal"
+auto_switch = false
+
+[theme.custom]
+selection_bg = "darkgray"
 
 [ui.toast]
 delivery = "herdr"
 
 [ui]
+sidebar_collapsed_mode = "hidden"
 show_agent_labels_on_pane_borders = false

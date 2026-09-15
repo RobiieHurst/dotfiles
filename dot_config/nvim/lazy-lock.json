@@ -1,6 +1,6 @@
 {
   "LazyVim": { "branch": "main", "commit": "c10948c50b18fae7f256433afdef09e432410480" },
-  "aether.nvim": { "branch": "main", "commit": "c36fb49ba924bcb05207a923e68799efb2d6a8d5" },
+  "aether": { "branch": "v3", "commit": "567efb778534e11ee1072d4fe27178f705a27d8a" },
   "async.nvim": { "branch": "main", "commit": "46adf61a022d5c923f981d527443f406e7d0f63e" },
   "bamboo.nvim": { "branch": "master", "commit": "1309bc88bffcf1bedc3e84e7fa9004de93da774a" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
@@ -11,7 +11,6 @@
   "chezmoi.vim": { "branch": "main", "commit": "7a498ea65f658993237fb0469001bdf71f68cf94" },
   "claudecode.nvim": { "branch": "main", "commit": "2390c6e45c4789072c293ac69de051d169668b29" },
   "cloak.nvim": { "branch": "main", "commit": "648aca6d33ec011dc3166e7af3b38820d01a71e4" },
-  "codecompanion.nvim": { "branch": "main", "commit": "cedbead815fb435026daa63a487bb69260c1cf69" },
   "conform.nvim": { "branch": "master", "commit": "619363c30309d29ffa631e67c8183f2a72caa373" },
   "ethereal.nvim": { "branch": "main", "commit": "a0ec73332e537228981b6a4f465cef82bb3e1d36" },
   "everforest": { "branch": "master", "commit": "85a86eb62409e3ec88713bff3d1b9d7374e112e4" },

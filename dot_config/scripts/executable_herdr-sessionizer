@@ -16,19 +16,17 @@ resolve_workspace_repo() {
 }
 
 workspace_name_for_path() {
-  local path=$1
+  local path=$1 rel repo name rest
 
-  case "$path" in
-    "$HOME"/Documents/geolytix.nosync/worktrees/*/*)
-      printf '%s\n' "${path##*/}"
+  # worktrees/<repo>/<name>[/<repo>] -> <name>
+  rel=${path#"$HOME/Documents/geolytix.nosync/worktrees/"}
+  if [[ $rel != "$path" ]]; then
+    IFS=/ read -r repo name rest <<< "$rel"
+    if [[ -n $name ]]; then
+      printf '%s\n' "$name"
       return
-      ;;
-    "$HOME"/Documents/geolytix.nosync/worktrees/*/*/*)
-      path=${path%/*}
-      printf '%s\n' "${path##*/}"
-      return
-      ;;
-  esac
+    fi
+  fi
 
   printf '%s\n' "${path##*/}"
 }
@@ -51,26 +49,57 @@ fzf_theme_scheme() {
   esac
 }
 
+list_worktrees() {
+  local root="$HOME/Documents/geolytix.nosync/worktrees" dir inner
+
+  [[ -d $root ]] || return 0
+
+  # Layouts:
+  #   worktrees/<repo>/<branch>          (herdr / manual)
+  #   worktrees/<repo>/<name>/<repo>     (Zed)
+  for dir in "$root"/*/*/; do
+    dir=${dir%/}
+    [[ -d $dir ]] || continue
+
+    if [[ -e $dir/.git ]]; then
+      printf '%s\n' "$dir"
+      continue
+    fi
+
+    for inner in "$dir"/*/; do
+      inner=${inner%/}
+      [[ -e $inner/.git ]] && printf '%s\n' "$inner"
+    done
+  done
+}
+
+list_projects() {
+  local root
+
+  for root in \
+    "$HOME/Documents/geolytix.nosync" \
+    "$HOME/Documents/rob" \
+    "$HOME/.config"
+  do
+    [[ -d $root ]] || continue
+    find "$root" -mindepth 1 -maxdepth 1 -type d
+  done
+}
+
+mode=all
+if [[ ${1:-} == --worktrees ]]; then
+  mode=worktrees
+  shift
+fi
+
 if [[ $# -eq 1 ]]; then
   selected_input=$1
 else
   selected_input=$( {
-    for root in \
-      "$HOME/Documents/geolytix.nosync" \
-      "$HOME/Documents/rob" \
-      "$HOME/.config"
-    do
-      [[ -d $root ]] || continue
-      find "$root" -mindepth 1 -maxdepth 1 -type d
-    done
-
-    if [[ -d "$HOME/Documents/geolytix.nosync/worktrees/xyz" ]]; then
-      find "$HOME/Documents/geolytix.nosync/worktrees/xyz" -mindepth 1 -maxdepth 1 -type d
+    if [[ $mode == all ]]; then
+      list_projects
     fi
-
-    if [[ -d "$HOME/Documents/geolytix.nosync/worktrees/xyz_rob" ]]; then
-      find "$HOME/Documents/geolytix.nosync/worktrees/xyz_rob" -mindepth 1 -maxdepth 1 -type d
-    fi
+    list_worktrees
   } | fzf --color="$(fzf_theme_scheme)" )
 fi
 

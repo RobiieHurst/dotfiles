@@ -91,20 +91,22 @@ keybindings:
 
 repoPaths: {"GEOLYTIX/*": "~/Documents/geolytix.nosync/*"}
 theme:
+  # omarchy-theme-start
   colors:
     text:
-      primary: "#F7F1FF"
-      secondary: "#5AD4E6"
-      inverted: "#F7F1FF"
-      faint: "#3E4057"
-      warning: "#FC618D"
-      success: "#7BD88F"
+      primary: "#e0def4"
+      secondary: "#9ccfd8"
+      inverted: "#232136"
+      faint: "#9492a8"
+      warning: "#eb6f92"
+      success: "#3e8fb0"
     background:
-      selected: "#535155"
+      selected: "#44415a"
     border:
-      primary: "#948AE3"
-      secondary: "#7BD88F"
-      faint: "#3E4057"
+      primary: "#9ccfd8"
+      secondary: "#3e8fb0"
+      faint: "#bab8ce"
+  # omarchy-theme-end
   ui:
     sectionsShowCount: true
     table:

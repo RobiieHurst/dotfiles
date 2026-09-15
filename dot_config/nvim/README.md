@@ -72,10 +72,18 @@ The leader key is `Space`.
 | `<F5>` | Start or continue debugging |
 | `<F10>` / `<F11>` / `<F12>` | Step over, into, or out while debugging |
 | `<leader>zig` | Restart the active LSP clients |
+| `<leader>uM` | Toggle inline diagnostics in the current Markdown buffer |
 | `<leader>pE` | Find `.env` files |
 
 Use `<leader>sk` inside Neovim to search all active keymaps, including the
 defaults provided by LazyVim.
+
+### Markdown diagnostics
+
+Press `Space u M` or run `:MarkdownDiagnosticsToggle` to hide diagnostic
+text and underlines in the current Markdown buffer. Toggle again to restore
+them. Gutter signs, diagnostic navigation, floats, and Trouble still work.
+This setting lasts until you close the buffer and does not affect other buffers.
 
 ## Customization
 
