@@ -78,6 +78,13 @@
 			"ctrl-k": "workspace::ActivatePaneUp",
 			"ctrl-j": "workspace::ActivatePaneDown",
 
+			// Alt hjkl to resize panes, alt-= to equalise
+			"alt-h": "vim::ResizePaneLeft",
+			"alt-l": "vim::ResizePaneRight",
+			"alt-k": "vim::ResizePaneUp",
+			"alt-j": "vim::ResizePaneDown",
+			"alt-=": "vim::ResetPaneSizes",
+
 			// +LSP
 			"space c a": "editor::ToggleCodeActions",
 			"space .": "editor::ToggleCodeActions",

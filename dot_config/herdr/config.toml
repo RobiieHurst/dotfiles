@@ -65,7 +65,7 @@ pane_id="$(printf '%s' "$tab_json" | jq -er '.result.root_pane.pane_id')" &&
 description = "open OpenCode tab"
 
 [theme]
-name = "terminal"
+name = "catppuccin-latte"
 auto_switch = false
 
 [theme.custom]

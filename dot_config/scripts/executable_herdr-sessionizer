@@ -71,6 +71,21 @@ list_worktrees() {
       [[ -e $inner/.git ]] && printf '%s\n' "$inner"
     done
   done
+
+  # Repos whose worktrees live in assorted places; ask git directly and
+  # skip the main worktree (already listed as a project).
+  local repo line
+  for repo in \
+    "$HOME/Documents/rob/rudy" \
+    "$HOME/Documents/rob/b1llie"
+  do
+    [[ -d $repo ]] || continue
+    git -C "$repo" worktree list --porcelain 2>/dev/null | while read -r line; do
+      [[ $line == "worktree "* ]] || continue
+      dir=${line#worktree }
+      [[ $dir != "$repo" && -d $dir ]] && printf '%s\n' "$dir"
+    done
+  done
 }
 
 list_projects() {

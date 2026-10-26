@@ -35,3 +35,4 @@ else
   git worktree add -b "$name" -- "$dest" "$base"
 fi
 echo "Worktree ready: $dest"
+"$(dirname "$0")/worktree-open.sh" "$dest"

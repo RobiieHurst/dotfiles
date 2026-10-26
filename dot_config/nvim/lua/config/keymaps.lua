@@ -7,7 +7,7 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
 -- File explorer
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pv", "<cmd>Oil<cr>", { desc = "Open parent directory" })
 
 -- Move lines in visual mode
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -40,9 +40,8 @@ vim.keymap.set({ "i", "x", "n", "s" }, "<C-s>", "<cmd>w<cr><esc>", { desc = "Sav
 
 -- Clipboard operations
 vim.keymap.set("x", "<leader>p", [["_dP]], { desc = "Paste without overwriting register" })
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]], { desc = "Yank to system clipboard" })
-vim.keymap.set("n", "<leader>Y", [["+Y]], { desc = "Yank line to system clipboard" })
-vim.keymap.set({ "n", "v" }, "<leader>d", '"_d', { desc = "Delete to black hole register" })
+-- clipboard=unnamedplus already sends plain y to the system clipboard
+vim.keymap.set({ "n", "v" }, "<leader>D", '"_d', { desc = "Delete to black hole register" })
 
 -- Better escape
 vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -64,13 +63,13 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 -- Search and replace
 vim.keymap.set(
   "n",
-  "<leader>s",
+  "<leader>rw",
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { desc = "Search and replace word under cursor" }
 )
 
 -- Make file executable
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { silent = true, desc = "Make file executable" })
 
 -- Go error handling shortcuts
 vim.keymap.set("n", "<leader>ee", "oif err != nil {<CR>}<Esc>Oreturn err<Esc>", { desc = "Go error return" })
@@ -102,20 +101,28 @@ vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<space>-", "<CMD>Oil --float<CR>", { desc = "Open parent directory (float)" })
 
 -- Cellular automaton fun
-vim.keymap.set("n", "<leader>ca", function()
+vim.keymap.set("n", "<leader>fml", function()
   require("cellular-automaton").start_animation("make_it_rain")
 end, { desc = "Cellular automaton" })
 
 -- Source config
-vim.keymap.set("n", "<leader><leader>", function()
+vim.keymap.set("n", "<leader>so", function()
   vim.cmd("so")
 end, { desc = "Source config" })
 
 -- Find .env files specifically
 vim.keymap.set("n", "<leader>pE", function()
-  require("telescope.builtin").find_files({
-    prompt_title = "Find .env files",
-    find_command = { "find", ".", "-name", ".env*", "-type", "f" },
+  Snacks.picker.files({
+    title = "Find .env files",
     hidden = true,
+    ignored = true,
+    exclude = { "node_modules" },
+    pattern = ".env",
   })
 end, { desc = "Find .env files" })
+
+-- Built-in undotree (Neovim 0.12)
+vim.keymap.set("n", "<leader>U", function()
+  vim.cmd.packadd("nvim.undotree")
+  vim.cmd.Undotree()
+end, { desc = "Toggle Undo Tree" })

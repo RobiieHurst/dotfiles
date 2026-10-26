@@ -2,7 +2,60 @@ return {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
+  keys = {
+    -- Yazi owns <leader>e / <leader>E instead of the snacks explorer
+    { "<leader>fe", false },
+    { "<leader>fE", false },
+    { "<leader>e", false },
+    { "<leader>E", false },
+
+    -- ThePrimeagen-style picker keys (previously telescope)
+    { "<leader>pf", function() Snacks.picker.files() end, desc = "Find Files" },
+    { "<C-p>", function() Snacks.picker.git_files() end, desc = "Find Git Files" },
+    { "<leader>vh", function() Snacks.picker.help() end, desc = "Help Tags" },
+    { "<leader>pws", function() Snacks.picker.grep_word() end, desc = "Grep current word" },
+    {
+      "<leader>pWs",
+      function()
+        Snacks.picker.grep_word({ search = vim.fn.expand("<cWORD>") })
+      end,
+      desc = "Grep current WORD",
+    },
+    {
+      "<leader>ps",
+      function()
+        Snacks.picker.grep_word({ search = vim.fn.input("Grep > ") })
+      end,
+      desc = "Grep string",
+    },
+
+    -- Zen mode (previously zen-mode.nvim)
+    {
+      "<leader>zz",
+      function()
+        Snacks.zen({ win = { width = 90 } })
+      end,
+      desc = "Zen Mode (90 width)",
+    },
+    {
+      "<leader>zZ",
+      function()
+        Snacks.zen({
+          win = { width = 80, wo = { number = false, relativenumber = false, colorcolumn = "" } },
+        })
+      end,
+      desc = "Zen Mode (80 width, minimal)",
+    },
+  },
   opts = {
+    explorer = { enabled = false },
+    picker = {
+      sources = {
+        files = { hidden = true },
+        grep = { hidden = true },
+        grep_word = { hidden = true },
+      },
+    },
     -- Disable problematic features that conflict with custom window management
     indent = { enabled = false }, -- This is causing the window ID conflict
     scroll = { enabled = false }, -- Disable scrolling animations
